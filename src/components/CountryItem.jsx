@@ -1,0 +1,14 @@
+import styles from './CountryItem.module.css';
+
+function CountryItem(prop) {
+  const { city } = prop;
+
+  return (
+    <li className={styles.countryItem}>
+      <span>{city.emoji}</span>
+      <span>{city.country}</span>
+    </li>
+  );
+}
+
+export default CountryItem;
